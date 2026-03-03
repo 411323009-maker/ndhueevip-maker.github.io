@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "首頁"
+    url: /
+  - title: "指導教授 (Advisor)"
+    url: "https://sys.ndhu.edu.tw/RD/TeacherTreasury/tlist.aspx?tcher=48"
+  - title: "成員介紹 (Members)"
+    url: /members/
+  - title: "論文發表 (Publications)"
+    url: /publications/
+  - title: "榮譽榜 (Honors)"
+    url: /honors/

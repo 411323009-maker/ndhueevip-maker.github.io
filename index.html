@@ -1,0 +1,73 @@
+---
+layout: splash
+title: "視訊與影像處理實驗室"
+permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.45"
+  overlay_image: /assets/images/lab-cover.png
+  caption: "國立東華大學電機工程學系"
+  actions:
+    - label: "了解我們的研究"
+      url: "#research"
+author_profile: false
+---
+
+<style>
+  /* 1. 確保最底層背景維持純白 */
+  body {
+    background-color: #ffffff !important;
+  }
+
+  /* 2. 針對主要內容區域設定米白色背景 */
+  /* .initial-content 是包覆整個內容區的容器 */
+  .initial-content {
+    background-color: #E8F0F7 !important; /* 標準淺灰色 */
+    padding-bottom: 5em; /* 增加底部空間，讓米色背景延伸 */
+  }
+
+  /* 3. 確保導覽列 (Masthead) 區塊維持透明或強制白色 */
+  .masthead {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* 4. 讓內容容器內的包裝層維持透明，才看得到底下的米色 */
+  .page__inner-wrap {
+    background-color: transparent !important;
+  }
+</style>
+
+<div class="lab-home">
+  <section id="intro" class="lab-section">
+    <h2 class="lab-title">視訊與影像處理實驗室</h2>
+    <p>
+      致力於最新國際視訊編碼標準 H.266/VVC 之編碼器加速設計，支援 4K 與 8K 超高畫質（UHD）視訊應用。
+    </p>
+    <div style="text-align: center; margin-bottom: 30px;">
+      <img src="/assets/publication-header.png" alt="Publications Header" style="width: 80%; max-width: 500px; border-radius: 8px;">
+    </div>
+  </section>
+
+  <section id="research" class="lab-section">
+    <h2 class="lab-title">研究方向</h2>
+
+    <h3 class="lab-subtitle">新一代視訊編碼技術</h3>
+    <p>
+      致力於最新國際視訊編碼標準 H.266/VVC 之編碼器快速化與效能最佳化，
+      支援超高畫質 <span class="nowrap">(UHD/8K)</span> 視訊應用。
+    </p>
+
+    <h3 class="lab-subtitle">影像與視訊處理</h3>
+    <p>包含影像分析、特徵擷取、品質評估與視覺感知相關技術。</p>
+
+    <h3 class="lab-subtitle">深度學習與機器學習應用</h3>
+    <p>運用深度學習與機器學習分析大量影像與視訊資料，提升影像處理與視訊編碼之效率與效能。</p>
+
+    <h3 class="lab-subtitle">智慧型視訊系統與應用</h3>
+    <p>結合 AI 與視訊編碼技術，發展高效率、低複雜度之智慧視訊處理系統。</p>
+  </section>
+</div>
+

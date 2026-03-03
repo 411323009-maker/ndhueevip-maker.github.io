@@ -1,0 +1,94 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles for lab homepage
+
+/* 研究內容外層容器：限制寬度並置中 */
+.lab-home {
+  max-width: 1100px;
+  margin: 3rem auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* 每個區塊間距 */
+.lab-section {
+  margin-bottom: 3rem;
+}
+
+/* 正文排版：行高、對齊與換行行為 */
+.lab-section p {
+  line-height: 1.8;
+  margin-top: 0.5rem;        /* 標題與內文之間的小間距 */
+  font-size: 1.05rem;        /* 略微放大內文字級 */
+  max-width: 900px;
+  text-align: left;          /* 左對齊，避免中文被強制撐開 */
+  overflow-wrap: break-word; /* 必要時才斷行 */
+}
+
+/* 標題區塊：小方塊＋垂直置中 */
+.lab-title,
+.lab-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;     /* 標題與內文之間的微小間距 */
+  color: #1a365d;
+  font-weight: 700;
+}
+
+.lab-title::before,
+.lab-subtitle::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #1a365d;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  flex: 0 0 10px;
+}
+
+/* h2 大標題（例如「研究方向」）字級略大 */
+.lab-title {
+  font-size: 1.9rem;
+  margin-top: 0;
+}
+
+/* h3 研究主題標題：與上一個主題保留距離 */
+.lab-subtitle {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+/* 每個「研究主題區塊」（標題＋內文）之間的距離 */
+.lab-section p + .lab-subtitle {
+  margin-top: 2.5rem;
+}
+
+/* 只針對研究方向區塊的段落再額外加下方間距與縮排 */
+#research p {
+  margin-left: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+/* 工具 class：不允許內文自動換行（例如 (UHD/8K)） */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* 調整全站內容寬度與左右留白 */
+.page__content {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    padding-inline: 20px;
+  }
+}
